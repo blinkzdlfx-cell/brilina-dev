@@ -1,0 +1,22 @@
+name = "brilina-dev"
+main = "worker/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "brilina-dev-db"
+database_id = "brilina-dev-db"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "brilina-dev-kv"
+
+[vars]
+ENVIRONMENT = "development"
+
+[dev]
+port = 3000

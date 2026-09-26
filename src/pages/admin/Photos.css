@@ -1,0 +1,128 @@
+.admin-photos__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.admin-photos__subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.admin-photos__error {
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-lg);
+  color: var(--color-accent-red);
+  margin-bottom: 1.5rem;
+}
+
+.admin-photos__loading {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.admin-photos__upload {
+  margin-bottom: 2rem;
+}
+
+.admin-photos__upload-label {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  background: var(--color-accent-blue);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.admin-photos__upload-label:hover {
+  background: var(--color-accent-blue-hover);
+}
+
+.admin-photos__upload-input {
+  display: none;
+}
+
+.admin-photos__upload-error {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--color-accent-red);
+}
+
+.admin-photos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.admin-photo-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.admin-photo-card--active {
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 0 0 1px var(--color-accent-blue);
+}
+
+.admin-photo-card__image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.admin-photo-card__actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+.admin-photo-card__btn {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.admin-photo-card__btn:hover {
+  background: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+.admin-photo-card__btn--active {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.admin-photo-card__btn--danger {
+  color: var(--color-accent-red);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.admin-photo-card__btn--danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.admin-photos__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 3rem 1rem;
+}

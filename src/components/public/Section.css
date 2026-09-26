@@ -1,0 +1,15 @@
+.section {
+  padding: 4rem 0;
+}
+
+.section__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}

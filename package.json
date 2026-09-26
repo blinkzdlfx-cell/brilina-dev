@@ -1,0 +1,38 @@
+{
+  "name": "brilina-dev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy",
+    "typecheck": "tsc -b",
+    "lint": "echo 'lint not configured'",
+    "db:migrate:local": "wrangler d1 migrations apply brilina-dev-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply brilina-dev-db --remote",
+    "db:create:local": "wrangler d1 create brilina-dev-db",
+    "db:create:remote": "wrangler d1 create brilina-dev-db --remote"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "motion": "^11.18.2",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^0.1.0",
+    "@cloudflare/workers-types": "^4.20250110.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3",
+    "wrangler": "^3.99.0"
+  }
+}

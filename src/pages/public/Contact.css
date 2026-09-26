@@ -1,0 +1,199 @@
+.contact-page__header {
+  margin-bottom: 3rem;
+}
+
+.contact-page__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-page__subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.contact-page__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact-page__form-wrap {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.contact-page__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact-page__input {
+  padding: 0.75rem 1rem;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: 0.9375rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-page__input:focus {
+  outline: none;
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.contact-page__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact-page__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-page__error {
+  padding: 0.75rem 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-red);
+  font-size: 0.875rem;
+}
+
+.contact-page__submit {
+  align-self: flex-start;
+  padding: 0.75rem 1.75rem;
+  background: var(--color-accent-blue);
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.contact-page__submit:hover:not(:disabled) {
+  background: var(--color-accent-blue-hover);
+}
+
+.contact-page__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-page__success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-page__success-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-page__success p {
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.contact-page__success-btn {
+  padding: 0.625rem 1.25rem;
+  background: transparent;
+  color: var(--color-accent-blue);
+  border: 1px solid var(--color-accent-blue);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.contact-page__success-btn:hover {
+  background: var(--color-accent-blue);
+  color: white;
+}
+
+.contact-page__info {
+  padding: 1.5rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.contact-page__info-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.contact-page__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-page__info-item:last-child {
+  border-bottom: none;
+}
+
+.contact-page__info-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact-page__info-value {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+}
+
+.contact-page__info-link {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.contact-page__info-link:hover {
+  color: var(--color-accent-blue-hover);
+  text-decoration: underline;
+}
+
+.contact-page__info-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .contact-page__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
